@@ -106,19 +106,6 @@ window.onload=function(){
             }
         }
     }
-    let sc=document.querySelector('.search input[type=search]');
-    sc.onchange=function(){
-        let txt=this.value;
-        let text=document.querySelectorAll('h2');
-        for(let t of text){
-            t.style.color='';
-        }
-        for(let t of text){
-            if(t.innerText.includes(txt)===true){
-                t.style.color='red';
-            }
-        }
-    }
     let d=document.querySelector('body');
     let r=d.getAttribute('rel');
     if(r==='forum'){
@@ -165,6 +152,19 @@ window.onload=function(){
                 }
             }
         });
+        let sc=document.querySelector('.search input[type=search]');
+        sc.onchange=function(){
+            let txt=this.value;
+            let text=document.querySelectorAll('h2');
+            for(let t of text){
+                t.parentElement.parentElement.style.display='none';
+            }
+            for(let t of text){
+                if(t.innerText.includes(txt)===true){
+                    t.parentElement.parentElement.style.display='block';
+                }
+            }
+        }
     }else if(r==='course'){
         let video=document.querySelector('.video-intro');
         let vi=document.querySelectorAll('.video');
@@ -176,6 +176,36 @@ window.onload=function(){
             v.addEventListener('click',function(){
                 video.classList.add('block');
             });
+        }
+        let sc=document.querySelector('.search input[type=search]');
+        sc.onchange=function(){
+            let txt=this.value;
+            let text=document.querySelectorAll('h2');
+            for(let t of text){
+                t.parentElement.parentElement.parentElement.style.display='none';
+                t.parentElement.parentElement.parentElement.parentElement.parentElement.children[0].style.display='block';
+            }
+            for(let t of text){
+                if(t.innerText.includes(txt)===true){
+                    t.parentElement.parentElement.parentElement.style.display='block';
+                }else{
+                    t.parentElement.parentElement.parentElement.parentElement.parentElement.children[0].style.display='none';
+                }
+            }
+        }
+    }else if(r==='news'){
+        let sc=document.querySelector('.search input[type=search]');
+        sc.onchange=function(){
+            let txt=this.value;
+            let text=document.querySelectorAll('h2');
+            for(let t of text){
+                t.parentElement.parentElement.parentElement.parentElement.style.display='none';
+            }
+            for(let t of text){
+                if(t.innerText.includes(txt)===true){
+                    t.parentElement.parentElement.parentElement.parentElement.style.display='block';
+                }
+            }
         }
     }
 }
