@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diễn đàn</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="Image/logo.png">
+    <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width:450px)">
+    <script src="JS/main.js"></script>
+</head>
+<body rel="forum">
+    <header>
+        <div>
+            <a class="gototop" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <div class="content-header flex">
+            <div class="content-head">
+                <img src="Image/logo-no-background.png" alt="logo">
+            </div>
+            <div class="content-head">
+                <div class="div-button">
+                    <button class="button-login">
+                        <img src="Image/avatar.png" alt="avatar">
+                        <span id="message">Tài khoản </span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="login">
+                        <ul class="menu">
+                            <li><p rel="login"><i class="fa-solid fa-user"></i><span> Đăng nhập</span></p></li>
+                            <li><p rel="signup"><i class="fa-solid fa-user-plus"></i><span> Đăng ký</span></p></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="content-navs flex">
+            <div class="content-but">
+                <button class="button button-menu"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <nav class="content-nav">
+                <ul class="menu flex">
+                    <li><a rel="home" href="#">Trang chủ</a></li>
+                    <li><a rel="course" href="#">Khóa học</a></li>
+                    <li class="active"><a rel="forum" href="#">Diễn đàn</a></li>
+                    <li><a rel="news" href="#">Tin tức</a></li>
+                </ul>
+                <p class="close">&times;</p>
+            </nav>
+            <div class="content-button flex">
+                <div class="content-search">
+                    <button class="button button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div class="search">
+                        <input type="search" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="forums">
+            <div class="add-topic">
+                <div class="head-topic flex">
+                    <div>
+                        <h1 class="item">Chủ đề</h1>
+                    </div>           
+                    <div class="add">
+                        <button class="but-add">Thêm chủ đề mới</button>
+                    </div>
+                </div>
+                <div class="write-topic">
+                    <div class="text-topic">
+                        <select id="find">
+                            <option value="Lập trình C++">Lập trình C++</option>
+                            <option value="Lập trình C#">Lập trình C#</option>
+                            <option value="Lập trình Java">Lập trình Java</option>
+                            <option value="Lập trình Python">Lập trình Python</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                    <div class="textarea-topic">
+                        <textarea id="write" placeholder="Nhập nội dung chủ đề"></textarea>
+                    </div>
+                    <div class="button-topic">
+                        <button id="btn" class="but-add">Gửi bài viết lên diễn đàn</button>
+                        <button class="but-add cancel">Hủy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="forum">
+                <div class="flex forum_topic">
+                    <i class="fa-regular fa-message message_logo"></i>
+                    <h2 class="title_subject">Lập trình C++</h2>
+                    <div class="caret_down">
+                        <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+                    </div>
+                </div>
+                <div class="list_topics">
+                    <div class="flex list_topic">
+                        <div class="topic">
+                            <p><a href="#">Cấu trúc struct trong quản lí sinh viên</a></p>
+                        </div>
+                        <div class="comment">
+                            <ul>
+                                <li>Xem: 3</li>
+                                <li>Bình luận: 1</li>
+                            </ul>
+                        </div>
+                        <div class="time_cmt">
+                            <p>Bình luận gần đây nhất <a href="#">Hồ Đạt</a> vào lúc 12h45 04/09</p>
+                        </div>        
+                    </div>
+                    <div class="flex list_topic">
+                         <div class="topic">
+                            <p><a href="#">Tìm hiểu cấu trúc rẽ nhánh trong C++</a></p>
+                         </div>
+                        <div class="comment">
+                            <ul>
+                                <li>Xem: 15</li>
+                                <li>Bình luận: 3</li>
+                            </ul>
+                        </div>
+                        <div class="time_cmt">
+                            <p>Bình luận gần đây nhất <a href="#">Văn Đoàn</a> vào lúc 23h43 29/08</p>
+                        </div>                      
+                    </div>
+                    <div class="flex list_topic">
+                        <div class="topic">
+                            <p><a href="#">Tìm hiểu cấu trúc lặp trong C++</a></p>
+                        </div>
+                        <div class="comment">
+                            <ul>
+                                <li>Xem: 28</li>
+                                <li>Bình luận: 3</li>
+                            </ul>
+                        </div>
+                        <div class="time_cmt">
+                            <p>Bình luận gần đây nhất <a href="#">Ngọc Linh</a> vào lúc 17h42 20/08</p>
+                        </div>      
+                    </div>
+                    <div class="flex list_topic">
+                        <div class="topic">
+                            <p><a href="#">Thiết lập mảng 2 chiều trong C++</a></p>
+                        </div>
+                        <div class="comment">
+                            <ul>
+                                <li>Xem: 7</li>
+                                <li>Bình luận: 2</li>
+                            </ul>
+                        </div>
+                        <div class="time_cmt">
+                            <p>Bình luận gần đây nhất <a href="#">Thanh Tiến</a> vào lúc 23h43 15/08</p>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        <div class="forum">
+            <div class="flex forum_topic">
+                <i class="fa-regular fa-message message_logo"></i>
+                <h2 class="title_subject">Lập trình C#</h2>  
+                <div class="caret_down">
+                    <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+            </div>
+            <div class="list_topics ">
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Biến toàn cục và biến cục bộ trong C#</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 12</li>
+                            <li>Bình luận: 1</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Phương Quyên</a> vào lúc 11h09 26/08</p>
+                    </div>
+                </div>
+                <div class="flex list_topic">
+                     <div class="topic">
+                        <p><a href="#"></a>Cấu trúc vòng lặp foreach trong C#</p>
+                     </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 20</li>
+                            <li>Bình luận: 1</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Nguyễn Mạnh Hùng</a> vào lúc 21h05 24/08</p>
+                    </div>
+                    
+                </div>
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Multi Threading (đa luồng) trong C#</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 22</li>
+                            <li>Bình luận: 2</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Minh Quân</a> vào lúc 17h42 15/08</p>
+                    </div>      
+                </div>
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Lỗi thường gặp khi thiết lập Stack (ngăn xếp) trong C#</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 14</li>
+                            <li>Bình luận: 4</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Thanh Kiệt</a> vào lúc 23h43 15/08</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forum">
+            <div class="flex forum_topic">
+                <i class="fa-regular fa-message message_logo"></i>
+                <h2 class="title_subject">Lập trình Java</h2>
+                
+                <div class="caret_down">
+                    <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+                </div>
+            </div>
+            <div class="list_topics ">
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Cách kiểm tra và xử lí lỗi biên dịch</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 32</li>
+                            <li>Bình luận: 10</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Gia Huy</a> vào lúc 12h34 30/07</p>
+                    </div>
+                </div>
+                <div class="flex list_topic">
+                     <div class="topic">
+                        <p><a href="#">Cách bắt lỗi ngoại lệ bằng trycatch</a></p>
+                     </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 40</li>
+                            <li>Bình luận: 8</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Phú Vinh</a> vào lúc 08h15 25/07</p>
+                    </div>
+                </div>
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Vì sao không có đa kế thừa trong Java?</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 58</li>
+                            <li>Bình luận: 16</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Nguyễn Hòa</a> vào lúc 13h23 23/07</p>
+                    </div>      
+                </div>
+                <div class="flex list_topic">
+                    <div class="topic">
+                        <p><a href="#">Phân tách chuỗi thành mảng trong Java</a></p>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>Xem: 17</li>
+                            <li>Bình luận: 22</li>
+                        </ul>
+                    </div>
+                    <div class="time_cmt">
+                        <p>Bình luận gần đây nhất <a href="#">Nhật Trường</a> vào lúc 16h21 12/07</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="forum">
+        <div class="flex forum_topic">
+            <i class="fa-regular fa-message message_logo"></i>
+            <h2 class="title_subject">Lập trình Python</h2>
+            <div class="caret_down">
+                <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="list_topics ">
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Cách kết nối và tương tác với cơ sở dữ liệu SQLite</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 12</li>
+                        <li>Bình luận: 4</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Bảo Khang</a> vào lúc 11h14 03/09</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                 <div class="topic">
+                    <p><a href="#">Cách cài đặt môi trường và chạy file Python</a></p>
+                 </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 27</li>
+                        <li>Bình luận: 18</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Bảo Quốc</a> vào lúc 18h15 26/08</p>
+                </div> 
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Kỹ thuật List Slicing</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 87</li>
+                        <li>Bình luận: 26</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Nguyễn Thành</a> vào lúc 20h48 25/08</p>
+                </div>      
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Lỗi khi sử dụng Hackerrank trong website chấm bài tự động</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 13</li>
+                        <li>Bình luận: 2</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Châu Toàn</a> vào lúc 17h50 19/08</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forum">
+        <div class="flex forum_topic">
+            <i class="fa-regular fa-message message_logo"></i>
+            <h2 class="title_subject">HTML</h2>
+            <div class="caret_down">
+                <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="list_topics ">
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Một số thẻ ngữ nghĩa HTML5 và đa phương tiện</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 24</li>
+                        <li>Bình luận: 2</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Anh Minh</a> vào lúc 07h17 02/09</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                 <div class="topic">
+                    <p><a href="#">Thao tác nâng cao khi tạo bảng table trong HTML</a></p>
+                 </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 12</li>
+                        <li>Bình luận: 1</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Tấn Tài</a> vào lúc 14h15 29/08</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Cách liên kết các hình ảnh và các trang web</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 47</li>
+                        <li>Bình luận: 12</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Nguyễn Lâm</a> vào lúc 22h10 22/08</p>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <div class="forum">
+        <div class="flex forum_topic">
+            <i class="fa-regular fa-message message_logo"></i>
+            <h2 class="title_subject">CSS</h2> 
+            <div class="caret_down">
+                <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="list_topics ">
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Thuộc tính position trong CSS</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 15</li>
+                        <li>Bình luận: 3</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Quang Thắng</a> vào lúc 09h58 01/09</p>
+                </div> 
+            </div>
+            <div class="flex list_topic">
+                 <div class="topic">
+                    <p><a href="#">Cách sử dụng hiệu ứng trong CSS(CSS Animation)</a></p>
+                 </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 10</li>
+                        <li>Bình luận: 4</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Tấn Phương</a> vào lúc 13h15 24/08</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Sự khác biệt giữa padding, margin, border, outline trong CSS</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 42</li>
+                        <li>Bình luận: 14</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Minh Khuê</a> vào lúc 21h20 17/08</p>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <div class="forum">
+        <div class="flex forum_topic">
+            <i class="fa-regular fa-message message_logo"></i>
+            <h2 class="title_subject">Javascript</h2>
+            <div class="caret_down">
+                <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="list_topics ">
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Cách sử dụng các hàm setInterval và setTimeout</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 25</li>
+                        <li>Bình luận: 6</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Thành Tâm</a> vào lúc 19h53 14/08</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Xử lí bất đồng bộ với promise và async/await</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 19</li>
+                        <li>Bình luận: 11</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Thúy Hằng</a> vào lúc 12h10 10/08</p>
+                </div>
+            </div>
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Cách sử dụng arrow function, callback và JS call</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 38</li>
+                        <li>Bình luận: 12</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Mạnh Tuấn</a> vào lúc 01h20 03/08</p>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <div class="forum">
+        <div class="flex forum_topic">
+            <i class="fa-regular fa-message message_logo"></i>
+            <h2 class="title_subject">Khác</h2>
+            <div class="caret_down">
+                <button class="button"><i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+        <div class="list_topics">
+            <div class="flex list_topic">
+                <div class="topic">
+                    <p><a href="#">Cách sử dụng arrow function, callback và JS call</a></p>
+                </div>
+                <div class="comment">
+                    <ul>
+                        <li>Xem: 38</li>
+                        <li>Bình luận: 12</li>
+                    </ul>
+                </div>
+                <div class="time_cmt">
+                    <p>Bình luận gần đây nhất <a href="#">Mạnh Tuấn</a> vào lúc 01h20 03/08</p>
+                </div>      
+            </div>
+        </div>
+    </div>
+    </section>
+</main>
+    <footer>
+        <div class="content-footer flex">
+            <div class="content-foot">
+                <p>Thông tin</p>
+                <ul class="menu-foot">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Số điện thoại</a></li>
+                </ul>
+            </div>
+            <div class="content-foot">
+                <p>Khóa học</p>
+                <ul class="menu-foot">
+                    <li><a href="#">Lập trình cơ bản</a></li>
+                    <li><a href="#">Tin học văn phòng</a></li>
+                </ul>
+            </div>
+            <div class="content-foot">
+                <p>Lĩnh vực</p>
+                <ul class="menu-foot">
+                    <li><a href="#">Lập trình</a></li>
+                    <li><a href="#">Tin học</a></li>
+                </ul>
+            </div>
+            <div class="content-foot">
+                <p>Cộng đồng</p>
+                <ul class="menu-foot">
+                    <li><a href="#">Tài liệu</a></li>
+                    <li><a href="#">Hỏi đáp</a></li>
+                </ul>
+            </div>
+            <div class="content-foot">
+                <p>Tham khảo</p>
+                <ul class="menu-foot">
+                    <li><a href="https://howkteam.vn/learn">howkteam</a></li>
+                    <li><a href="https://fullstack.edu.vn/">fullstack</a></li>
+                </ul>
+</div>
+            <div class="content-foot">
+                <p>Quảng cáo</p>
+                <ul class="menu-foot flex">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-youtube"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="move">
+            <span>Froud Stack &copy; 2024</span>
+        </div>
+    </footer>
+</body>
+</html>
